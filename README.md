@@ -16,3 +16,14 @@ Allows branching of the program, dependant on the result of <expression>.
 
 # WHILE <expression> / DONE
 Allows loops, dependant on the result of <expression>.
+
+## Compilation
+The interpreter supports both written files and REPL.
+For written file with name <file>, compile the main:
+```
+g++ -o main main.cpp
+```
+and pass the files name as first parameter:
+```
+./main <file>
+```
