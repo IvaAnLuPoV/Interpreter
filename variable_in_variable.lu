@@ -1,0 +1,26 @@
+LET n
+LET q
+READ n
+READ q
+
+LET arr[128]
+LET qry[128]
+
+LET iter
+iter = 0
+WHILE iter < n
+READ arr[iter]
+iter = iter + 1
+DONE
+
+iter = 0
+WHILE iter < q
+READ qry[iter]
+iter = iter + 1
+DONE
+
+iter = 0
+WHILE iter < q
+PRINT arr[qry[iter]]
+iter = iter + 1
+DONE

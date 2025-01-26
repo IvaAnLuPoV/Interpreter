@@ -1,0 +1,23 @@
+LET n
+READ n
+
+IF n < 0
+GOTO end
+ENDIF
+
+LET min
+READ min
+n = n - 1
+
+LET a
+WHILE n > 0
+READ a
+IF a < min
+min = a
+ENDIF
+n = n - 1
+DONE
+
+PRINT min
+
+LABEL end

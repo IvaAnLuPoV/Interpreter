@@ -1,0 +1,9 @@
+LET a
+LET b
+LET c
+READ a
+READ b
+READ c
+PRINT a
+PRINT b
+PRINT c

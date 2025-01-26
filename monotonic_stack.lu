@@ -1,0 +1,22 @@
+LET n
+READ n
+LET arr[16]
+
+LET iter
+iter = 0
+WHILE iter < n
+READ arr[iter]
+iter = iter + 1
+DONE
+
+LET i
+LET j
+i = 0
+WHILE i < n
+j = 0
+WHILE j < n
+PRINT arr[i] * arr[j]
+j = j + 1
+DONE
+i = i + 1
+DONE

@@ -1,0 +1,34 @@
+LET n
+READ n
+
+LET dp[128][128]
+dp[0][0] = 1
+
+LET iter
+iter = 1
+WHILE iter <= n
+LET a
+READ a
+LET sum
+sum = 0
+WHILE sum < 128
+dp[iter][sum] = dp[iter - 1][sum]
+sum = sum + 1
+DONE
+sum = 0
+WHILE sum + a < 128
+IF dp[iter - 1][sum] > dp[iter][sum + a]
+dp[iter][sum+a] = dp[iter - 1][sum]
+ENDIF
+sum = sum + 1
+DONE
+iter = iter + 1
+DONE
+
+iter = 0
+WHILE iter < 128
+IF dp[n][iter] == 1
+PRINT iter
+ENDIF
+iter = iter + 1
+DONE
